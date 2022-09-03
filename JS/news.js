@@ -19,7 +19,3 @@ const displayNews = newsCategory => {
 }
 loadNews()
 
-/*
-<div class="d-flex justify-content-center">
-<a class="navbar-brand p-4" href="#">Navbar</a>
-*/
