@@ -31,10 +31,9 @@ const loadDetailNews = (category_id) => {
 const displayDetailNews = newsDetail => {
     console.log(newsDetail)
     const detailNews = document.getElementById('detail-news');
-
     const detailNewsDiv = document.createElement('div');
-    detailNewsDiv.innerHTML = `
-        <div class="pb-4">
+    detailNewsDiv.classList.add('news-div')
+    detailNewsDiv.innerHTML = `       
             <div class="row g-0">
             <div class="col-md-4">
                 <img src="${newsDetail.thumbnail_url}" class="img-fluid rounded-start" alt="...">
@@ -49,9 +48,7 @@ const displayDetailNews = newsDetail => {
                     <button>Click</button>
                     </div>
                 </div>
-            </div>
-            </div>
-        
+            </div>        
     `;
     detailNews.appendChild(detailNewsDiv);
 
