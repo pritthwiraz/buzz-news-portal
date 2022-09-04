@@ -8,7 +8,7 @@ const loadNews = () => {
 const displayNews = newsCategory => {
     const newsContainer = document.getElementById('news-container')
     newsCategory.forEach(category => {
-        // console.log(category)
+
         const newsDiv = document.createElement('div');
         newsDiv.innerHTML = `
                <a class="navbar-brand p-2" onclick="loadDetailNews('${category.category_id}')" href="#">${category.category_name}</a>
@@ -17,25 +17,21 @@ const displayNews = newsCategory => {
 
     })
 }
-/*
+
 const loadDetailNews = (category_id) => {
-    console.log('deatail news added', category_id)
-}
-*/
-const loadDetailNews = (category_id) => {
-    // console.log('deatail news added', category_id)
+
     const url = ` https://openapi.programming-hero.com/api/news/category/${category_id}`
-    // console.log(url);
+
     fetch(url)
         .then(res => res.json())
-        // .then(data => console.log(data.data[0].title))
+
         .then(data => displayDetailNews(data.data[0]))
 }
 
 const displayDetailNews = newsDetail => {
     console.log(newsDetail)
     const detailNews = document.getElementById('detail-news');
-    // newsDetail.forEach(newsDetail => {
+
     const detailNewsDiv = document.createElement('div');
     detailNewsDiv.innerHTML = `
         <div class="pb-4">
