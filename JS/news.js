@@ -50,14 +50,14 @@ const displayDetailNews = newsDetail => {
     detailNews.appendChild(detailNewsDiv);
 
 }
-// const displayNewsModal = () => {
-//     fetch(` https://openapi.programming-hero.com/api/news/0282e0e58a5c404fbd15261f11c2ab6a`)
-//         .then(res => res.json())
-//         .then(newsLink => console.log(newsLink))
-// }
+const displayNewsModal = () => {
+    fetch(` https://openapi.programming-hero.com/api/news/0282e0e58a5c404fbd15261f11c2ab6a`)
+        .then(res => res.json())
+        .then(newsLink => console.log(newsLink))
+}
 
 
-// displayNewsModal();
+displayNewsModal();
 
 loadNews()
 
