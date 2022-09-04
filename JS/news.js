@@ -31,6 +31,7 @@ const loadDetailNews = (category_id) => {
 const displayDetailNews = newsDetail => {
     console.log(newsDetail)
     const detailNews = document.getElementById('detail-news');
+
     const detailNewsDiv = document.createElement('div');
     detailNewsDiv.classList.add('news-div')
     detailNewsDiv.innerHTML = `       

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUZZ NEWS PORTAL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header class="mt-4">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container d-flex border-bottom pb-4">
+                <a class="navbar-brand" href="#"><img class="img-fluid" src="image/Logo-BuzzNews.png" width="175"
+                        height="30" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <div class="me-5 pe-5">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="text-center">FAQ Section</h1>
+        <section>
+            <div class="card container">
+                <div class="card-body">
+                    <h4 class="card-title  text-center">What are Difference Between var, let and const?</h4>
+                    <p class="card-text">There are four Ways to declare a JavaScript Variable. Using var, Using let,
+                        Using Const and Using. In this article we will discuss the differences between var, let and
+                        const.
+                    </p>
+                    <h4>Var</h4>
+                    <p>var declarations are globally scoped or function/locally scoped.The scope is global
+                        when a var variable is declared outside a function. This means that any variable
+                        that is declared with var outside a function block is available for use in the whole
+                        window.var is function scoped when it is declared within a function. This means that it is
+                        available and can be accessed only within that function.</p>
+                    <p>var variables can be re-declared and updated</p>
+                    <h4>Let</h4>
+                    <p>let is block scoped
+                        A block is a chunk of code bounded by {}. A block lives in curly braces. Anything within curly
+                        braces is a block.
+                        So a variable declared in a block with let is only available for use within that block. </p>
+                    <p>let can be updated but not re-declared.</p>
+                    <h4>Const</h4>
+                    <p>Variables declared with the const maintain constant values.const declarations are block scoped
+                        Like let declarations, const declarations can only be accessed within the block they were
+                        declared.</p>
+                    <p>const cannot be updated or re-declared</p>
+
+
+                </div>
+            </div>
+            <div class="card container mt-4">
+                <div class="card-body">
+                    <h4 class="card-title  text-center">The Difference Between Regular Functions and Arrow Functions
+                    </h4>
+                    <p class="card-text">A JavaScript function is a block of code designed to perform a particular
+                        task.A JavaScript function is executed when "something" invokes it (calls it). Let's explore the
+                        difference between normal and arrow function.
+                    </p>
+                    <h4>Normal Function</h4>
+                    <p>Regular functions created using function declarations or expressions are constructible and
+                        callable. Since regular functions are constructible, they can be called using the new keyword.
+                    </p>
+                    <p>In regular JavaScript functions, arguments keywords can be used to access the passed arguments
+                        when the function is invoked.But, arrow functions do not have their own arguments and it uses
+                        the arguments from the outer function.</p>
+                    <h4>Arrow Function</h4>
+                    <p>Arrow functions were introduced in ES6.
+                        Arrow functions allow us to write shorter function syntax:</p>
+                    <p>Arrow Functions Return Value by Default. This works only if the function has only one statement.
+                        If you have parameters, you pass them inside the parentheses. if you have only one parameter,
+                        you can skip the parentheses as well:</p>
+                </div>
+            </div>
+            <div class="card container mt-4 mb-5">
+                <div class="card-body">
+                    <h4 class="card-title  text-center">What is Template String and Why we should Use it?
+                    </h4>
+                    <p class="card-text">Template literals are a new feature introduced in ECMAScript 2015/ ES6. It
+                        provides an easy way to create multiline strings and perform string interpolation. Template
+                        literals are the string literals and allow embedded expressions.Template literals (template
+                        strings) allow you to use strings or embedded
+                        expressions in the form of a string. They are enclosed in backticks `` .
+
+                    </p>
+                    <p>Template strings are a powerful feature of modern JavaScript released in ES6. It lets us
+                        insert/interpolate variables and expressions into strings without needing to concatenate like in
+                        older versions of JavaScript. It allows us to create strings that are complex and contain
+                        dynamic elements</p>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center">Copyright 2023 Buzz News Ltd.</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
